@@ -1,0 +1,296 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* src/App.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  /*background-color: #f9f9f9;*/
+}
+
+.app {
+  display: flex;
+  width: 100%;
+}
+
+/* Header Styles */
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #f4f4f4;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Main Content Styles */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Login Styles */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.login form {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 300px;
+}
+
+.login form div {
+  margin-bottom: 15px;
+}
+
+.login form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.login form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.login form button:hover {
+  background-color: #45a049;
+}
+
+/* Medication List Styles */
+.medication-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.medication-list th,
+.medication-list td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.medication-list th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Medication Form Styles */
+.medication-form div {
+  margin: 10px 0;
+}
+
+.medication-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.medication-form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.medication-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.medication-form button:hover {
+  background-color: #45a049;
+}
+
+/* Inventory Styles */
+.inventory {
+  padding: 20px;
+}
+
+.inventory table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory th,
+.inventory td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.inventory th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Chat Styles */
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.message.user {
+  background-color: #e0f7fa;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #f1f8e9;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.chat-input button:hover {
+  background-color: #45a049;
+}
